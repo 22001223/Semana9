@@ -1,0 +1,20 @@
+<div class="max-w-sm mx-auto space-y-6">
+    <div class="flex flex-row gap-8 items-center">
+        <label for="name-input" class="block w-1/6 mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre:</label>
+        <input [(ngModel)]="name" type="text" id="name-input" aria-describedby="helper-text-explanation" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+    </div>
+
+    <div class="flex flex-row gap-8 items-center">
+        <label for="grades" class="block w-1/6 mb-2 text-sm font-medium text-gray-900 dark:text-white">Raza:</label>
+        <select [(ngModel)]="race" id="grades" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <option>PERRO</option>
+            <option>GATO</option>
+            <option>AVE</option>
+            <option>PEZ</option>
+        </select>
+    </div>
+    
+    <div class="flex flex-row justify-center w-full gap-8">
+        <button type="submit" class="w-1/2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" (click)="addToList()">GRABAR</button>
+    </div>
+</div>
